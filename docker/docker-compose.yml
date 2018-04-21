@@ -9,7 +9,7 @@ services:
     ports:
       - "8080:80"
     links:
-      - mysql
+      - mysql:mysqlserver01
     command: [ "/run.sh" ]
   mysql:
     image: mysql:5.7
