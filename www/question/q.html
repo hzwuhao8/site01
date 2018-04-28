@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>question</title>
+
+<style media="screen">
+  a{
+    font-size:40px;
+  }
+  span{
+    font-size:20px;
+  }
+</style>
+</head>
+<body>
+
+<form action="get.php" method="get">
+<div id="div1">
+  <p>1.gender</p>
+  <input type="radio" name="gender" value="n" checked="checked"> choose &#160;&#160;&#160;
+  <input type="radio" name="gender" value="a"> male &#160;&#160;&#160;
+  <input type="radio" name="gender" value="b"> female
+</div>
+<div id="div2">
+  <p>2.what is your age?</p>
+  <input type="radio" name="age" value="n" checked="checked"> choose &#160;&#160;&#160;
+  <input type="radio" name="age" value="a"> &#60;20 &#160;&#160;&#160;
+  <input type="radio" name="age" value="b"> 20~40 &#160;&#160;&#160;
+  <input type="radio" name="age" value="c"> 40~60 &#160;&#160;&#160;
+  <input type="radio" name="age" value="d"> &#62;60 <br>
+</div>
+<div id="div3">
+  <p>3.do you have pet?</p>
+<input type="checkbox" name="pet[]" value="a" checked="checked">NO &#160;&#160;&#160;
+<input type="checkbox" name="pet[]" value="b">cat &#160;&#160;&#160;
+<input type="checkbox" name="pet[]" value="c">dog &#160;&#160;&#160;
+<input id="o" type="text" name="other" value="other">
+</div>
+<br>
+  <input type="submit" value="Submit">
+</form>
+<a href="/question/index_q.html" accesskey="i">index <span>accesskey="i"</a>
+<br>
+<a href="/question/q.html" accesskey="q">question <span>accesskey="q"</a>
+<br>
+<a href="/question/result.php" accesskey="-">question-result <span>accesskey="-"</a>
+<br>
+<script>
+function p() {
+  x = document.getElementById("o").setAttribute("value","");
+}
+document.getElementById("o").onclick=function(){p()};
+</script>
+
+
+</body>
+</html>

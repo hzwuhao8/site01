@@ -1,0 +1,44 @@
+<html>
+<head>
+<title></title>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+
+</head>
+<body>
+  <!--
+<p id="p">cookie</p>
+-->
+<p id="p2">welcome: </p>
+
+<form>
+  <input id="in" type="text" value="name"></input>
+  <input id="b" type="button" value="button" onclick="bo()"/>
+</form>
+<script>
+function bo() {
+  var i = document.getElementById("in").value
+  var n = i
+  n.toString
+  var x = "name = " + n
+  document.cookie = x;
+}
+var y = document.cookie;
+//y.toString
+$("#p").text(y)
+function p() {
+  x = document.getElementById("in").setAttribute("value","");
+}
+document.getElementById("in").onclick=function(){p()};
+
+
+function str() {
+  var p = y.indexOf("=");
+  p += 1
+  var na = y.substring(p)
+  $("#p2").append(na)
+}
+str()
+</script>
+</body>
+</html>

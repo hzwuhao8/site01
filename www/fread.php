@@ -5,5 +5,5 @@ $filename = 'data.txt';
 $contents = fread($fp, filesize($filename));
 echo "$contents";
 
-fclose($handle);
+fclose($fp);
 ?>
