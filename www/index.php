@@ -14,7 +14,7 @@
 </style>
 </head>
 <body>
-  <a href="/question/index_q.html" accesskey="q">index <span>accesskey="q"</a>
+  <a href="/question/index_q.html" accesskey="q">index_question <span>accesskey="q"</a>
     <br>
   <a href="/cookie/cookie1.html" accesskey="c">cookie <span>accesskey="c"</a>
 
