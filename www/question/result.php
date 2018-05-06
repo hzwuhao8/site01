@@ -4,6 +4,11 @@ $fn1 = array('age_a.txt','age_b.txt','age_c.txt','age_d.txt','gender_a.txt','gen
 $name = array("aa","ab","ac","ad","ga","gb","pa","pb","pc","other");
 $name2 = array("aa","ab","ac","ad","ga","gb","pa","pb","pc","other");
 foreach ($fn1 as $fn) {
+  $f = file_get_contents($fn);
+  $name[$i] = $f;
+  $i++;
+/*
+
   if (filesize($fn) == 0) {
     $name[$i] = "null";
     $i++;
@@ -19,6 +24,7 @@ foreach ($fn1 as $fn) {
   }
   $name[$i] = $c;
   $i++;
+  */
 }
 $fl=array_combine($name2,$name);
 ?>
