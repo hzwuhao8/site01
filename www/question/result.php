@@ -25,7 +25,7 @@ $fl=array_combine($name2,$name);
 <html>
 <head>
 <title>result</title>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="/js/jquery-3.3.1.min.js"></script>
 <style media="screen">
 table {
   border-collapse: collapse;
